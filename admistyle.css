@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 190vh;
+    padding: 9px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(135deg, #182b83 0%,#3e1f5e 100%);
+}
+
+ .box{
+    
+    background-color: #eaeee6;
+    padding: 45px 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width:  600px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 30px;
+    animation: slide 2s ease;
+}
+ .box h1,h3{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.box h1{
+    color: white;
+    background-color: #543079;
+    padding: 18px;
+    border: #eaeee6;
+    border-radius: 12px;
+    margin-top: 25px;
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.box h1:hover{
+    color:hite;
+    background: #462568;
+}
+.box .file{
+    margin-bottom: 1px;
+}
+ .box .picture{
+    margin-top: 0.1px;
+}
+.box label{
+    font-size: 18px;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    animation: popins 3s ease; 
+}
+.box input{
+    border-radius: 10px;
+    border: transparent;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px;
+    transition: 0.5 ease;
+    /* animation: slide 3s ease; */
+}
+.box input:focus{
+    border: blue;
+    outline: none;
+    box-shadow:0 0 25px #462568;
+}
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.radio-group label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.box .select{
+    width: 100%;
+    border: transparent;
+    padding: 12px;
+    border-radius: 10px;
+}
+.box .select:focus{
+    border: blue;
+    outline: none;
+    box-shadow: 0 0 20px #462468 ;
+}
+
+.box button{
+    background-color: #543079;
+    display: block;
+    border: transparent;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 9px;
+    margin-top: 19px;
+    margin-bottom: 55px;
+}
+.box button:hover{
+    background-color: #263faf;
+    color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+@keyframes slide{
+    from{
+        opacity: 0.1;
+        transform: translateY(-0px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+@keyframes popins{
+    from{
+       opacity: 0;
+       transform:translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-0px);
+    }
+}
